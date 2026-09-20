@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100">
+  <rect width="400" height="100" fill="none"/>
+  <circle cx="50" cy="50" r="35" fill="#4154f1"/>
+  <text x="100" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#012970">DDS EXPO</text>
+</svg>

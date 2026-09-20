@@ -1,0 +1,6 @@
+{
+  "name": "DDS Expo",
+  "description": "DDS Expo – 100% AI-Driven Digital Marketing & IT Solutions with Integrated ERP, CRM & Business Management Portal",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

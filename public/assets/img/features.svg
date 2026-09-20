@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550" width="700" height="550">
+  <defs>
+    <linearGradient id="featGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4154f1" />
+      <stop offset="100%" stop-color="#7928ca" />
+    </linearGradient>
+    <filter id="featShadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4154f1" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <rect x="50" y="40" width="600" height="470" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#featShadow)" />
+
+  <!-- Node network -->
+  <circle cx="350" cy="200" r="50" fill="url(#featGrad)" />
+  <text x="330" y="208" font-family="sans-serif" font-size="24" font-weight="bold" fill="#ffffff">AI</text>
+
+  <!-- Branch Nodes -->
+  <g transform="translate(140, 100)">
+    <rect width="130" height="70" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+    <text x="15" y="32" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Video Synthesis</text>
+    <text x="15" y="52" font-family="sans-serif" font-size="10" fill="#64748b">3-Sec Hook Engine</text>
+    <line x1="130" y1="35" x2="170" y2="75" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2" />
+  </g>
+
+  <g transform="translate(430, 100)">
+    <rect width="130" height="70" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+    <text x="15" y="32" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Ad Optimization</text>
+    <text x="15" y="52" font-family="sans-serif" font-size="10" fill="#64748b">Auto Keyword Bid</text>
+    <line x1="0" y1="35" x2="-30" y2="75" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2" />
+  </g>
+
+  <g transform="translate(140, 310)">
+    <rect width="130" height="70" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+    <text x="15" y="32" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Headless Web</text>
+    <text x="15" y="52" font-family="sans-serif" font-size="10" fill="#64748b">0.4s Cloud Ingress</text>
+    <line x1="130" y1="35" x2="170" y2="-35" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2" />
+  </g>
+
+  <g transform="translate(430, 310)">
+    <rect width="130" height="70" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+    <text x="15" y="32" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a">ERP &amp; CRM</text>
+    <text x="15" y="52" font-family="sans-serif" font-size="10" fill="#64748b">Automated Ledgers</text>
+    <line x1="0" y1="35" x2="-30" y2="-35" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2" />
+  </g>
+
+  <!-- Bottom Metric Strip -->
+  <rect x="90" y="420" width="520" height="60" rx="16" fill="#1e293b" />
+  <text x="120" y="456" font-family="sans-serif" font-size="15" font-weight="bold" fill="#38bdf8">99.98% Availability</text>
+  <text x="320" y="456" font-family="sans-serif" font-size="15" font-weight="bold" fill="#4ade80">Zero Data Leakage</text>
+  <text x="500" y="456" font-family="sans-serif" font-size="15" font-weight="bold" fill="#facc15">Instant Sync</text>
+</svg>

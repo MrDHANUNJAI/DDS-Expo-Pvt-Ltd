@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4154f1" />
+      <stop offset="50%" stop-color="#2a75d3" />
+      <stop offset="100%" stop-color="#7928ca" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="100%" stop-color="#0070f3" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4154f1" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Logo Mark -->
+  <g transform="translate(20, 10)">
+    <!-- Outer rounded hexagon/shield -->
+    <rect x="5" y="5" width="90" height="90" rx="22" fill="url(#grad1)" filter="url(#shadow)" />
+    <!-- Dynamic geometric facet -->
+    <path d="M 20 20 L 75 20 C 83 20, 88 25, 88 35 L 88 75 C 88 83, 83 88, 75 88 Z" fill="url(#grad2)" opacity="0.35" />
+    <!-- White DDS Emblem / Falcon Rocket Motif -->
+    <path d="M 32 30 L 52 30 C 66 30, 75 38, 75 50 C 75 62, 66 70, 52 70 L 32 70 Z M 44 42 L 44 58 L 51 58 C 58 58, 62 55, 62 50 C 62 45, 58 42, 51 42 Z" fill="#ffffff" />
+    <!-- Sparkle accent -->
+    <circle cx="75" cy="25" r="4" fill="#ffffff" />
+    <polygon points="75,15 77,23 85,25 77,27 75,35 73,27 65,25 73,23" fill="#00ffff" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="135" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-1.5" fill="#012970">
+    DDS <tspan fill="#4154f1">EXPO</tspan>
+  </text>
+  <text x="138" y="89" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="4.5" fill="#5f6d7e">
+    DIGITAL SOLUTIONS &amp; AI
+  </text>
+  <circle cx="510" cy="85" r="3.5" fill="#4154f1" />
+</svg>
