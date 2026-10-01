@@ -77,8 +77,8 @@ export const FeaturesPage: React.FC = () => {
               {
                 icon: Database,
                 color: '#f3268c',
-                title: 'Integrated Enterprise ERP Transparency',
-                desc: 'Never wonder about project statuses. Our integrated ERP portal gives you real-time visibility into task boards, GST invoices, support tickets, and sprint milestones.',
+                title: 'Transparent Project Milestone Tracking',
+                desc: 'Never wonder about project statuses. Our transparent workflows give you real-time visibility into deliverables, GST invoices, support channels, and sprint milestones.',
                 metrics: '100% Real-Time Milestone Visibility',
               },
             ].map((feat, idx) => {
@@ -166,8 +166,8 @@ export const FeaturesPage: React.FC = () => {
                       free: 'None (Direct Freelancer)',
                     },
                     {
-                      label: 'Real-Time Client ERP Portal',
-                      dds: 'Live Task, Invoice & SLA Hub',
+                      label: 'Project Milestone Transparency',
+                      dds: 'Dedicated Manager & Live Milestone Updates',
                       trad: 'Weekly Manual PDF Reports',
                       free: 'Messy Chat Threads',
                     },

@@ -1,11 +1,7 @@
 import React from 'react';
 import { useNavigation } from '../context/NavigationContext';
 
-interface FooterProps {
-  onOpenPortal?: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({ onOpenPortal }) => {
+export const Footer: React.FC = () => {
   const { navigateTo } = useNavigation();
 
   return (
@@ -138,18 +134,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortal }) => {
                   Contact & Support
                 </button>
               </li>
-              {onOpenPortal && (
-                <li className="mb-2 pt-1 border-top">
-                  <i className="bi bi-shield-lock text-primary me-1"></i>{' '}
-                  <button
-                    type="button"
-                    onClick={onOpenPortal}
-                    className="btn btn-link p-0 text-decoration-none text-primary fw-semibold small"
-                  >
-                    Employee ERP Portal
-                  </button>
-                </li>
-              )}
             </ul>
           </div>
 

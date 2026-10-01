@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ChatbotWidget } from './chatbot/ChatbotWidget';
 
 export const FloatingWidgets: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -20,9 +21,9 @@ export const FloatingWidgets: React.FC = () => {
 
   return (
     <>
-      {/* Floating WhatsApp Chat */}
+      {/* Floating Direct WhatsApp Chat (Bottom Left) */}
       <a
-        href="https://wa.me/919966994679?text=Hi%20DDS%20Expo,%20I%20am%20interested%20in%20your%20AI%20digital%20marketing%20services."
+        href="https://wa.me/919966994679?text=Hi%20DDS%20Expo,%20I%20am%20interested%20in%20your%20digital%20marketing%20and%20web%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float text-decoration-none"
@@ -32,7 +33,7 @@ export const FloatingWidgets: React.FC = () => {
         <i className="bi bi-whatsapp"></i>
       </a>
 
-      {/* Scroll to Top Button */}
+      {/* Scroll to Top Button (Bottom Right, above Chatbot) */}
       {showScrollTop && (
         <button
           type="button"
@@ -44,6 +45,9 @@ export const FloatingWidgets: React.FC = () => {
           <i className="bi bi-arrow-up-short fs-4"></i>
         </button>
       )}
+
+      {/* Modern Local FAQ Chatbot Assistant (Bottom Right) */}
+      <ChatbotWidget />
     </>
   );
 };

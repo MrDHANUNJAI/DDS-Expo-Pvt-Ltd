@@ -147,7 +147,7 @@ export const AboutPage: React.FC = () => {
                 <ul className="list-unstyled space-y-2 mb-0">
                   <li className="d-flex align-items-center gap-2 text-dark small fw-semibold">
                     <CheckCircle2 size={16} className="text-primary" />
-                    <span>Scale our integrated ERP portal to empower 10,000+ MSME businesses.</span>
+                    <span>Scale our client growth platforms to empower 10,000+ MSME businesses.</span>
                   </li>
                   <li className="d-flex align-items-center gap-2 text-dark small fw-semibold">
                     <CheckCircle2 size={16} className="text-primary" />
@@ -207,9 +207,9 @@ export const AboutPage: React.FC = () => {
             <div className="col-lg-3 col-md-6">
               <div className="card h-100 p-4 rounded-4 border border-slate-100 shadow-sm text-center">
                 <div className="badge bg-warning text-dark px-3 py-1.5 rounded-pill mx-auto mb-3 fs-6">2026</div>
-                <h5 className="fw-bold text-dark mb-2">Enterprise Portal & Beyond</h5>
+                <h5 className="fw-bold text-dark mb-2">Digital Scale & Beyond</h5>
                 <p className="small text-muted mb-0">
-                  Surpassed 500+ projects milestone. Launched our Unified ERP & Business Portal with real-time tracking, GST billing, and lead automation.
+                  Surpassed 500+ projects milestone. Expanded our client analytics, automated reporting, and campaign pipelines.
                 </p>
               </div>
             </div>
@@ -323,7 +323,7 @@ export const AboutPage: React.FC = () => {
                   <div className="col-sm-6">
                     <div className="d-flex align-items-center gap-2">
                       <TrendingUp className="text-warning shrink-0" size={20} />
-                      <span className="text-white fw-semibold small">Live Tracking in Client ERP Portal</span>
+                      <span className="text-white fw-semibold small">Real-Time Project Milestone Tracking</span>
                     </div>
                   </div>
                 </div>

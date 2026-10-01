@@ -102,7 +102,7 @@ const SUCCESS_STORIES: TestimonialStory[] = [
     servicesUsed: ['3D Architectural Video Tours', 'HNWI B2B Targeting', 'Instant CRM Sync'],
     headline: '48 ultra-luxury sea-facing villas completely sold out 4 months ahead of schedule',
     challenge: 'High-ticket inventory (₹2.5 Cr+ units) requiring verified HNWI and NRI buyers rather than unqualified casual clicks.',
-    solution: 'Designed immersive cinematic drone walk-throughs, launched income-bracket verified Meta & Google Search funnels, and connected inquiries directly to the sales closing team via DDS ERP.',
+    solution: 'Designed immersive cinematic drone walk-throughs, launched income-bracket verified Meta & Google Search funnels, and connected inquiries directly to the sales closing team via automated CRM routing.',
     resultQuote: 'In luxury real estate, 95% of digital leads are usually wasted tyre-kickers. DDS Expo pre-qualified leads through interactive WhatsApp bots. All 48 villas sold out four months ahead of our bank finance deadline.',
     date: 'December 2025',
     verified: true,

@@ -98,19 +98,20 @@ h1, h2, h3, h4, h5, h6 {
 /* Back to top */
 .scroll-top-btn {
   position: fixed;
-  bottom: 25px;
+  bottom: 92px;
   right: 25px;
   background: #4154f1;
   color: #fff;
   width: 44px;
   height: 44px;
-  border-radius: 4px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 996;
+  z-index: 1040;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(65, 84, 241, 0.3);
+  box-shadow: 0 4px 15px rgba(65, 84, 241, 0.35);
+  cursor: pointer;
 }
 
 .scroll-top-btn:hover {
@@ -118,3 +119,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   transform: translateY(-3px);
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

@@ -20,7 +20,6 @@ const PAGE_TITLES: Record<PageRoute, string> = {
   gallery: 'Work Gallery & Portfolio | Commercial Campaigns & Showcase',
   careers: 'Careers & Internships | Join the Future of AI at DDS Expo',
   contact: 'Contact Us & Corporate Offices | DDS Expo Visakhapatnam',
-  portal: 'Business ERP & CRM Portal | DDS Expo Enterprise Management',
 };
 
 function parseHash(): { page: PageRoute; params: Record<string, string> } {
@@ -43,7 +42,6 @@ function parseHash(): { page: PageRoute; params: Record<string, string> } {
     'gallery',
     'careers',
     'contact',
-    'portal',
   ];
 
   const page = validPages.includes(normalizedRoute) ? normalizedRoute : 'home';

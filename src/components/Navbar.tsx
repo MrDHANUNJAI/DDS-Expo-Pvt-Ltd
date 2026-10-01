@@ -4,10 +4,9 @@ import { BrandLogo } from './BrandLogo';
 
 interface NavbarProps {
   onOpenEnquiry?: () => void;
-  onOpenPortal?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry, onOpenPortal }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
   const { currentPage, navigateTo } = useNavigation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -92,18 +91,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry, onOpenPortal }) =
 
           {/* Desktop Right Action Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            {onOpenPortal && (
-              <button
-                type="button"
-                onClick={onOpenPortal}
-                className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 rounded-lg border border-slate-200 transition-all duration-200 shadow-sm cursor-pointer"
-                title="Business Portal"
-              >
-                <i className="bi bi-shield-lock-fill text-blue-600"></i>
-                <span>ERP Portal</span>
-              </button>
-            )}
-
             {onOpenEnquiry && (
               <button
                 type="button"
@@ -117,17 +104,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry, onOpenPortal }) =
 
           {/* Mobile Actions Menu Toggle */}
           <div className="flex lg:hidden items-center gap-3">
-            {onOpenPortal && (
-              <button
-                type="button"
-                onClick={onOpenPortal}
-                className="p-2 text-slate-600 hover:text-blue-600 rounded-lg border border-slate-100 bg-slate-50/50"
-                aria-label="ERP Portal"
-              >
-                <i className="bi bi-shield-lock fs-5"></i>
-              </button>
-            )}
-
             <button
               type="button"
               className="p-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg transition-colors focus:outline-none"

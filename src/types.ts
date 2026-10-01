@@ -71,5 +71,4 @@ export type PageRoute =
   | 'blog'
   | 'gallery'
   | 'careers'
-  | 'contact'
-  | 'portal';
+  | 'contact';

@@ -11,9 +11,7 @@ import { Footer } from './components/Footer';
 import { VideoModal } from './components/VideoModal';
 import { EnquiryModal } from './components/EnquiryModal';
 import { FloatingWidgets } from './components/FloatingWidgets';
-import { PortalMain } from './components/portal/PortalMain';
 import { ServiceItem } from './types';
-import { Shield, ArrowRight } from 'lucide-react';
 
 // Dedicated Webpages
 import { HomePage } from './pages/HomePage';
@@ -43,17 +41,11 @@ function AppContent() {
     setIsEnquiryOpen(true);
   };
 
-  // When user is in ERP Business Portal view
-  if (currentPage === 'portal') {
-    return <PortalMain onBackToWebsite={() => navigateTo('home')} />;
-  }
-
   return (
     <div className="index-page d-flex flex-column min-vh-100 position-relative">
       {/* Top Header / Navigation with active links and dropdown redirection */}
       <Navbar
         onOpenEnquiry={handleOpenGeneralEnquiry}
-        onOpenPortal={() => navigateTo('portal')}
       />
 
       {/* Main Dynamic Webpage Switcher */}
@@ -89,7 +81,7 @@ function AppContent() {
       </main>
 
       {/* Global Footer with Navigation Links */}
-      <Footer onOpenPortal={() => navigateTo('portal')} />
+      <Footer />
 
       {/* Interactive Video Modal */}
       <VideoModal
@@ -107,27 +99,6 @@ function AppContent() {
 
       {/* Floating WhatsApp and Scroll to Top */}
       <FloatingWidgets />
-
-      {/* Floating ERP Portal Quick Access Pill */}
-      <button
-        onClick={() => navigateTo('portal')}
-        className="position-fixed d-none d-md-flex align-items-center gap-2 px-3 py-2 bg-dark text-white rounded-pill shadow-lg border border-primary text-decoration-none z-3 transition hover-scale-105"
-        style={{
-          bottom: '24px',
-          left: '24px',
-          fontSize: '13px',
-          fontWeight: 600,
-          cursor: 'pointer',
-          zIndex: 1040,
-        }}
-        title="Access Unified ERP & CRM Portal"
-      >
-        <span className="p-1 rounded-circle bg-primary d-inline-flex align-items-center justify-content-center">
-          <Shield size={14} className="text-white" />
-        </span>
-        <span>Business ERP Portal</span>
-        <ArrowRight size={14} className="text-primary" />
-      </button>
     </div>
   );
 }

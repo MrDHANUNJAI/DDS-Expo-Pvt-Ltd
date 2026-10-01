@@ -161,7 +161,7 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     title: 'B2B Targeted LinkedIn & Meta Funnel Engine',
     category: 'Social Growth',
     subCategory: 'Facebook Business',
-    client: 'CloudVantage ERP',
+    client: 'CloudVantage Software',
     industry: 'Enterprise Software',
     year: '2025',
     image: '/assets/img/about.jpg',
@@ -322,7 +322,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     compensation: '₹45,000 - ₹80,000 / month',
     openings: 2,
     featured: true,
-    description: 'Build robust, lightning-fast client websites, e-commerce storefronts, custom ERP modules, and modern web applications with seamless API integrations.',
+    description: 'Build robust, lightning-fast client websites, e-commerce storefronts, custom web modules, and modern web applications with seamless API integrations.',
     responsibilities: [
       'Develop modern responsive web applications using React, TypeScript, Tailwind CSS, and Vite/Next.js.',
       'Build secure RESTful APIs, webhook listeners, and third-party integrations (Payment gateways, CRMs, WhatsApp APIs).',
@@ -409,11 +409,11 @@ export const JOB_OPENINGS: JobOpening[] = [
     experience: 'BBA / MBA / Engineering Graduate',
     compensation: '₹15,000 - ₹22,000 / month Stipend',
     openings: 3,
-    description: 'Work directly alongside our Founders and Department Heads to coordinate project milestones, client onboarding, SLA tracking, and ERP workflow administration.',
+    description: 'Work directly alongside our Founders and Department Heads to coordinate project milestones, client onboarding, SLA tracking, and workflow administration.',
     responsibilities: [
       'Assist in managing client delivery timelines, sprint deliverables, and resource allocation.',
       'Facilitate smooth communication between clients and the internal design & tech teams.',
-      'Manage records in our unified ERP & CRM portal (invoices, proposals, task boards).',
+      'Manage records in our project management systems (invoices, proposals, task boards).',
       'Analyze project completion metrics and prepare executive performance summaries.',
     ],
     requirements: [
@@ -512,7 +512,7 @@ export const DETAILED_BLOG_POSTS: DetailedBlogPost[] = [
           ],
         },
         {
-          heading: 'Full-Funnel Automation: Integrated ERP & CRM Systems',
+          heading: 'Full-Funnel Automation: Integrated CRM & Lead Systems',
           body: 'Tools are useless if leads slip through the cracks. Connecting your website forms directly to an automated CRM with instant WhatsApp alerts and salesperson assignment ensures a response time under 5 minutes, doubling conversion probability.',
         },
       ],
