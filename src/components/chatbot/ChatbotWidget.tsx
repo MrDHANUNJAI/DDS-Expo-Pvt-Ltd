@@ -8,6 +8,7 @@ import {
   DDS_PHONE_DISPLAY,
 } from '../../data/chatbotFaqData';
 import { WhatsAppCtaButton } from './WhatsAppCtaButton';
+import { CuteRobotFace } from './CuteRobotFace';
 
 interface Message {
   id: string;
@@ -177,10 +178,12 @@ export const ChatbotWidget: React.FC = () => {
         <span className="absolute top-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full z-10" />
 
         {isOpen ? (
-          <i className="bi bi-x-lg text-2xl transition-transform duration-200"></i>
+          <div className="relative flex items-center justify-center">
+            <i className="bi bi-x-lg text-2xl transition-transform duration-200"></i>
+          </div>
         ) : (
-          <div className="flex items-center justify-center">
-            <i className="bi bi-chat-dots-fill text-2xl"></i>
+          <div className="flex items-center justify-center relative">
+            <CuteRobotFace size={40} mood="happy" isAnimated={true} className="cute-robot-float drop-shadow-md" />
           </div>
         )}
 
@@ -204,8 +207,8 @@ export const ChatbotWidget: React.FC = () => {
           {/* Header */}
           <div className="px-4 py-3.5 bg-gradient-to-r from-[#012970] via-[#093582] to-[#194297] text-white flex items-center justify-between shadow-sm select-none">
             <div className="flex items-center gap-2.5">
-              <div className="relative w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white backdrop-blur-sm shadow-inner">
-                <i className="bi bi-robot text-lg"></i>
+              <div className="relative w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white backdrop-blur-sm shadow-inner p-0.5">
+                <CuteRobotFace size={30} mood="happy" isAnimated={true} />
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-400 border border-[#012970] rounded-full"></span>
               </div>
               <div>
@@ -293,8 +296,8 @@ export const ChatbotWidget: React.FC = () => {
                 >
                   <div className="flex items-end gap-2 max-w-[90%]">
                     {!isUser && (
-                      <div className="w-7 h-7 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs shrink-0 mb-1 shadow-xs">
-                        <i className="bi bi-robot"></i>
+                      <div className="shrink-0 mb-1 flex items-center justify-center drop-shadow-xs">
+                        <CuteRobotFace size={26} mood="happy" isAnimated={false} />
                       </div>
                     )}
 
@@ -350,8 +353,8 @@ export const ChatbotWidget: React.FC = () => {
             {/* Typing Indicator */}
             {isTyping && (
               <div className="flex items-center gap-2 text-slate-400 ml-1 animate-pulse">
-                <div className="w-7 h-7 rounded-full bg-blue-600/20 text-blue-600 flex items-center justify-center text-xs shrink-0">
-                  <i className="bi bi-robot"></i>
+                <div className="shrink-0 flex items-center justify-center">
+                  <CuteRobotFace size={26} mood="excited" isAnimated={true} />
                 </div>
                 <div className="bg-white border border-slate-200 px-3 py-2 rounded-2xl rounded-bl-xs flex items-center gap-1.5 shadow-xs">
                   <span className="w-2 h-2 rounded-full bg-blue-500 animate-bounce" style={{ animationDelay: '0ms' }} />

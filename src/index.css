@@ -95,29 +95,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* Back to top */
-.scroll-top-btn {
-  position: fixed;
-  bottom: 92px;
-  right: 25px;
-  background: #4154f1;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1040;
-  transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(65, 84, 241, 0.35);
-  cursor: pointer;
+/* Cute Robot Face Animations */
+@keyframes cuteRobotBlink {
+  0%, 92%, 100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
 }
 
-.scroll-top-btn:hover {
-  background: #5969f3;
-  color: #fff;
-  transform: translateY(-3px);
+.cute-robot-eye {
+  transform-origin: 32px 31px;
+  animation: cuteRobotBlink 4.2s infinite ease-in-out;
+}
+
+@keyframes cuteRobotFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(1.5deg);
+  }
+}
+
+.cute-robot-float {
+  animation: cuteRobotFloat 3s infinite ease-in-out;
 }
 
 @keyframes fadeIn {
