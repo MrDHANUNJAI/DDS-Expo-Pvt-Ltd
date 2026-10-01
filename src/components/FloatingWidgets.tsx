@@ -21,18 +21,6 @@ export const FloatingWidgets: React.FC = () => {
 
   return (
     <>
-      {/* Floating Direct WhatsApp Chat (Bottom Left) */}
-      <a
-        href="https://wa.me/919966994679?text=Hi%20DDS%20Expo,%20I%20am%20interested%20in%20your%20digital%20marketing%20and%20web%20services."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-float text-decoration-none"
-        aria-label="Chat on WhatsApp"
-        title="Chat with DDS Expo on WhatsApp"
-      >
-        <i className="bi bi-whatsapp"></i>
-      </a>
-
       {/* Scroll to Top Button (Bottom Right, above Chatbot) */}
       {showScrollTop && (
         <button
